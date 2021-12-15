@@ -1,7 +1,99 @@
 
 
 .userinterface {
-  grid-area: user;
-  background-color: #567B97;
+  background-color: darken(#567B97,30%);
   height: 100vh;
+  position: fixed;
+  transform: translateX(-200px);
+  transition: all 250ms;
+  width: 170px;
+
+
+  &__active {
+    transform: translateX(0px);
+  }
+
+  &__arrow {
+    position: fixed;
+    transform: translateY(620%);
+    transition: all 250ms;
+
+
+    & svg {
+      width: 40px;
+      height: 40px;
+      fill: #f42f42;
+      cursor: pointer;
+    }
+
+
+    &__left {
+      transform: translateY(620%) translateX(180px);
+
+      & svg {
+        fill: #567B97;
+      }
+
+    }
+  }
+
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &__userprofile {
+
+    transform: translateY(8px);
+
+    &__img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      cursor: pointer;
+
+    }
+  }
+}
+
+
+.userinterfaceblocked {
+  position: fixed;
+  background-color: darken(#567B97,30%);
+  height: 100vh;
+  transform: translateX(-200px);
+  transition: all 250ms;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+
+  &__active {
+    transform: translateX(0px);
+  }
+
+  &__lock {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & h3 {
+      font-size: 14px;
+      color: white;
+    }
+
+    & p{
+      color: white;
+    }
+
+    & svg {
+      width: 30px;
+      height: 30px;
+      fill: white;
+    }
+  }
 }

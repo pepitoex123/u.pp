@@ -3,8 +3,7 @@ import LogoSrc from "../media/img/logo.png";
 import Searchbar from "./Searchbar";
 import {AiFillHome} from "react-icons/ai";
 import {IoMdChatbubbles} from "react-icons/io";
-import {BsBookFill} from "react-icons/bs";
-import {MdGroup,MdLogin} from "react-icons/md";
+import {MdOutlinePlayCircleFilled,MdLogin,MdMonetizationOn} from "react-icons/md";
 
 
 const Header = () => {
@@ -25,13 +24,13 @@ const Header = () => {
                     <IoMdChatbubbles/>
                     <p>Chat</p>
                 </div>
-                <div className="header__navmenu__item">
-                    <BsBookFill/>
-                    <p>Positions</p>
+                <div className="header__navmenu__item header__navmenu__item__subscribe">
+                    <MdOutlinePlayCircleFilled/>
+                    <p>Subscribe</p>
                 </div>
                 <div className="header__navmenu__item">
-                    <MdGroup/>
-                    <p>Groups</p>
+                    <MdMonetizationOn/>
+                    <p>Donate</p>
                 </div>
                 <div className="header__navmenu__item">
                     <MdLogin/>
