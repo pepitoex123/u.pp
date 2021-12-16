@@ -5,11 +5,21 @@
 @import "base/typography";
 @import "base/body";
 
-// Components
 
+// Utils
+
+@import "utility/mainutil";
+
+// Components
 @import "components/Layout";
 @import "components/Header";
 @import "components/Searchbar";
 @import "components/UserInterface";
+@import "components/HomeCard";
+
+
+// Pages
+
+@import "pages/Home";
 
 

@@ -7,16 +7,19 @@
   transform: translateX(-200px);
   transition: all 250ms;
   width: 170px;
+  z-index: 99;
 
 
   &__active {
     transform: translateX(0px);
+    z-index: 99;
   }
 
   &__arrow {
     position: fixed;
     transform: translateY(620%);
     transition: all 250ms;
+    z-index: 99;
 
 
     & svg {
@@ -24,6 +27,7 @@
       height: 40px;
       fill: #f42f42;
       cursor: pointer;
+      z-index: 99;
     }
 
 
@@ -70,9 +74,12 @@
   align-items: center;
   justify-content: center;
 
+  z-index: 99;
+
 
   &__active {
     transform: translateX(0px);
+    z-index: 99;
   }
 
   &__lock {

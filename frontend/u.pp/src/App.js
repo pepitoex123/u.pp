@@ -1,19 +1,20 @@
 import Layout from "./components/Layout";
 import Header from "./components/Header";
 import UserInterface from "./components/UserInterface";
-import {BrowserRouter,Route} from "react-router-dom";
+import {BrowserRouter,Route,Routes} from "react-router-dom";
+import Home from "./components/Home";
 
 function App() {
   return (
-    <Layout>
-      <Header/>
-      <UserInterface/>
       <BrowserRouter>
-          <Route exact path={"/"}>
-              
-          </Route>
+          <Layout>
+              <Header/>
+              <UserInterface/>
+              <Routes>
+                  <Route path="/" element={<Home/>}/>
+              </Routes>
+          </Layout>
       </BrowserRouter>
-    </Layout>
   );
 }
 
