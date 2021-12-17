@@ -60,3 +60,12 @@
 
   }
 }
+
+
+@media screen and (max-width: 700px){
+  .search {
+    &__input {
+      padding: 12px 2px;
+    }
+  }
+}

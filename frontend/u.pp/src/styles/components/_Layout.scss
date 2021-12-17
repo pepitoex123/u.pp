@@ -8,3 +8,15 @@
              "footer footer footer footer footer footer footer footer footer footer footer footer footer";
 }
 
+
+@media screen and (max-width: 800px){
+  .layout-grid {
+    display: grid;
+    grid-template-areas: "header"
+                          "mobilenav"
+                         "main"
+                        "main"
+                        "footer";
+  }
+}
+
