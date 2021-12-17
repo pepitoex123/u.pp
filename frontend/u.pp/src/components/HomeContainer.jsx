@@ -7,7 +7,11 @@ const HomeContainer = ({title,link,linkcontent}) => {
             <div className="homecontainer__text">
                 <h3 className="homecontainer__text__title">{title}</h3>
                 <p className="homecontainer__text__link">
-                    <a href={link}>{linkcontent}</a>
+                    {
+                        link && linkcontent ? (
+                            <a href={link}>{linkcontent}</a>
+                        ) : ""
+                    }
                 </p>
             </div>
 

@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  grid-area: footer;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #1E2C36;
+  opacity: 0.9;
+  &__logo {
+
+    & img {
+      width: 160px;
+      height: 160px;
+    }
+  }
+
+  &__text {
+    color: white;
+
+    &__title {
+      font-size: 20px;
+    }
+
+    &__paragraphs {
+      font-size: 16px;
+
+
+      &--red:hover {
+        color: #f42f42;
+        fill: #f42f42;
+      }
+
+
+      & p svg {
+        transform: translateY(3px);
+      }
+    }
+  }
+}

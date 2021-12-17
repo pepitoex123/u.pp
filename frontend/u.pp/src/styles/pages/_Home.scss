@@ -10,6 +10,30 @@
 
     background-color: #E8FAFF;
   }
+
+  &__shopcontainer {
+    margin-top: -24px;
+  }
+
+
+  &__youtubetwitchcontainer {
+    display: flex;
+    flex-direction: row;
+
+    & div {
+      width: 50%;
+
+    }
+  }
+
+  &__spotifycontainer {
+    display: flex;
+    flex-direction: row;
+
+    & div {
+      width: 50%;
+    }
+  }
 }
 
 
