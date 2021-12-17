@@ -16,11 +16,11 @@ const Header = () => {
                 <Searchbar/>
             </div>
             <div className="header__navmenu">
-                <div className="header__navmenu__item" data-shadow="home">
+                <div className="header__navmenu__item">
                     <AiFillHome/>
                     <p>Home</p>
                 </div>
-                <div className="header__navmenu__item" data-shadow="chat">
+                <div className="header__navmenu__item">
                     <IoMdChatbubbles/>
                     <p>Chat</p>
                 </div>
@@ -39,6 +39,9 @@ const Header = () => {
                 <div className="header__navmenu__item">
                     <MdShoppingCart/>
                     <p>Shop</p>
+                </div>
+                <div className="header__mobilenavmenu__item">
+                    
                 </div>
             </div>
         </header>

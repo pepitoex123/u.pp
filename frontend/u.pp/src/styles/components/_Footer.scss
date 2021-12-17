@@ -37,3 +37,23 @@
     }
   }
 }
+
+
+@media screen and (max-width: 700px){
+  .footer {
+    flex-direction: column;
+    align-items: center;
+
+    &__text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      &__paragraphs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}

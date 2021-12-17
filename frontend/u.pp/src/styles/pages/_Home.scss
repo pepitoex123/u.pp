@@ -46,5 +46,21 @@
         margin: 10px 0px;
       }
     }
+
+    &__youtubetwitchcontainer {
+      flex-direction: column;
+
+      & div {
+        width: 100%;
+      }
+    }
+
+    &__spotifycontainer {
+      flex-direction: column;
+
+      & div {
+        width: 100%;
+      }
+    }
   }
 }

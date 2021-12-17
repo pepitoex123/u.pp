@@ -18,8 +18,8 @@ const Home = () => {
                 <HomeContainer title={"Broadcasts"} link={"#"} linkcontent={"twitch.tv"}/>
             </div>
             <div className="home__spotifycontainer">
-                <HomeContainer title={"Top Tracks"}/>
-                <HomeContainer title={"Recently Played"}/>
+                <HomeContainer title={"Top Tracks"} link={"#"} linkcontent={"Spotify"}/>
+                <HomeContainer title={"Recently Played"} link={"#"} linkcontent={"Spotify"}/>
             </div>
         </div>
     )
